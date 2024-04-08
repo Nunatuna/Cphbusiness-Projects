@@ -28,10 +28,23 @@ header{
     margin-bottom: 1rem;
 }
 
-.container{
+/* .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+} */
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+        logo    null    null    nav
+        item1   item1   item1   item1
+        item2   item2   item3   item3
+        item4   item4   item5   item5
+        item6   item6   item7   item7
+        footer  footer  footer  footer
+    ;
 }
 
 .logo, .nav{
